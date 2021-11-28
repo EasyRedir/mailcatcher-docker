@@ -1,4 +1,4 @@
-FROM easyredir/ruby:2.4
+FROM easyredir/ruby:3.0
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -7,7 +7,7 @@ RUN apt-get update \
 		libsqlite3-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN gem install mailcatcher --no-rdoc --no-ri
+RUN gem install mailcatcher --no-document
 
 ENV SMTP_PORT=1025 \
     HTTP_PORT=1080
