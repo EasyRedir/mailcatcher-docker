@@ -1,4 +1,4 @@
-FROM easyredir/ruby:3.0
+FROM easyredir/ruby:3.1
 
 ENV DEBIAN_FRONTEND noninteractive
 
